@@ -1,14 +1,52 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
-body {
-    background-image: url('../img/background.jpg');
-    background-size:cover;
-    background-attachment: fixed;
-    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+
+
+@media (min-width: 992px) {
+    body {
+        background-image: url('../img/background.jpg');
+        background-size:cover;
+        background-attachment: fixed;
+        font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
 }
+@media (max-width: 992px) {
+    body {
+        font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .container-fluid{
+        margin-bottom:0;
+        margin-top: 0;
+    }
+    #tag-line {
+         display: none;
+    }
+    ul{
+        padding:0;
+        margin: 0;
+    }
+    li{
+        list-style-type:none;
+        display: inline;
+        margin-right: 1em;
+    }
+    a:link, a:visited {
+        color: #55E;
+        text-decoration: none;
+    }
+    a:hover { 
+        color: #00E;
+    }
+    input:focus { 
+        color: #00E;
+    }
+}
+
 a:link, a:visited {
     color: #0000AA;
     text-decoration: none;
@@ -46,14 +84,7 @@ main {
     background-image: url(../img/ricepaper_v3.png);
     opacity: 0.9;
 }
-@media (min-width >= 992px) {
-    restaurant-info {
-        col-md-4;    
-    }   
-    menu-section {
-        col-md-6;
-    }
-}
+
 header {
     color:#FFFFFF;
     padding: 1em;
